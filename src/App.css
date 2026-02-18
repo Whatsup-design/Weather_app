@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 500px;
+    padding: 2rem;                 /* reduce padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   /* push content to top */
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #6dd5fa, #2980b9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.child-element h1 {
+    /* text-align: top;  ❌ remove */
+    font-size: 2.5rem;
+    color: #e7f9ff;
+    margin-bottom: 1rem;
+}
+
+.child-element p {
+    font-weight: 500;
+    margin-top : 2rem;  /* remove default top margin */
+    font-size: 1.2rem;
+    color: #d0e8f9;
+    margin-bottom: 2rem;
+}
+
+.child-element input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 18px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.search-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.search-row input,
+.search-row button {
+    height: 45px;           /* force same height */
+    border: none;
+    border-radius: 18px;
+    font-size: 1rem;
+    background: none;
+    border: 2px solid #fff;
+    color: white;
+}
+
+.search-row input {
+    flex: 1;
+    padding: 0 1rem;        /* horizontal padding only */
+    background-color: white;
+    color: black;
+}
+
+.search-row button {
+    padding: 0 1.2rem;
+    cursor: pointer;
+}
