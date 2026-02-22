@@ -82,3 +82,31 @@ body {
     padding: 0 1.2rem;
     cursor: pointer;
 }
+
+.container-data{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    width: 100%;
+   
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+h4{
+    font-size: 1rem;
+    color: #e7f9ff;
+    margin-bottom: 0.5rem;
+}
+.hum-container p,
+.temp-container p{
+    margin-top: 0;
+    padding: 0;
+    font-size: 2rem;
+    color: #e7f9ff;
+    font-weight: bold;
+}
